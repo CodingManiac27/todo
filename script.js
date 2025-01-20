@@ -49,9 +49,8 @@ function rendertasks(task){
         `
 
         taskdiv.querySelector('button').addEventListener('click', () => {
-            tasks.filter(t => t.id !== task.id);
+            tasks = tasks.filter(t => t.id !== task.id);
             savetasks();
-            showtasks(tasks)
         })
 
         tasklist.appendChild(taskdiv)
