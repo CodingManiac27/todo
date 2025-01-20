@@ -49,7 +49,7 @@ function rendertasks(task){
         `
 
         taskdiv.querySelector('button').addEventListener('click', () => {
-            task.completed = !task.completed
+            tasks.filter(t => t.id !== task.id);
             showtasks(tasks)
         })
 
